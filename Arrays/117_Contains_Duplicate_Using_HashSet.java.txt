@@ -1,0 +1,19 @@
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+
+        //Create Hash set to store integers
+        Set<Integer> intSet = new HashSet<>();
+
+        // Iterate over each element
+        for (int num : nums){
+            if (intSet.contains(num))
+            return true;
+            intSet.add(num);
+            
+        }
+       
+        return false;
+
+        
+    }   
+}
